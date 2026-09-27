@@ -1,0 +1,27 @@
+/* Anthony Thomas 9/26/26 */
+ 
+/* making the text stay to its original position when flipped */
+#introText {
+    width: fit-content;
+    transform-origin: center center;
+}
+
+/* hover box styling */
+.color_box {
+    width: 200px;
+    height: 100px;
+    background: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* text color of dl */
+dt {
+    color: teal;
+}
+
+dd{
+    color: maroon;
+}

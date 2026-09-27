@@ -1,0 +1,77 @@
+<!-- Anthony Thomas 9/26/26 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using jQuery Selectors and Events</title>
+
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+
+    <!-- Local JQuery -->
+     <script src="./resources/jquery.min.js"></script>
+    
+    <!-- fallback to CDN if local fails -->
+    <script>
+        if (typeof jQuery === "undefined") {
+            console.log("Local JQuery failed, Loading CDN version");
+
+            document.write('<script src="https://code.jquery.com/jquery-4.0.0.min.js"><\/script>');
+        } else {
+            console.log("Local JQuery loaded successfully.")
+        }
+
+    </script>
+
+    <!-- Custom script -->
+    <script src="scripts/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Using jQuery Selectors and Events</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+                <p id="introText">This paragraph is normal.</p>
+
+            <button id="changeTextColorBtn">Change Text Color</button>
+            <button id="flipTextBtn"> Double Click to Flip Text</button>
+
+        </section>
+
+        <section>
+
+            <div class="color_box" id="box1">Hover Me</div>
+
+        </section>
+
+        <section>
+
+            <dl>
+                <dt>#changeTextColorBtn</dt>
+                    <dd>This selects the corresponding id in the HTML for it to change the color of the text when the proper button is clicked</dd>
+
+                <dt>#introText</dt>
+                    <dd>This selects the paragraph in the HTML so it can be manipulated with Javascript and jQuery</dd>
+
+                <dt>#flipTextBtn</dt>
+                    <dd>This selects the corresponding id in the HTML for it to flip the text when the proper button is double clicked</dd>
+
+                <dt>#box1</dt>
+                    <dd>This selects the corresponding id in the HTML for it to change whether it is being hovered over by the mouse or not</dd>
+
+                <dt>$(this)</dt>
+                    <dd>"This" is used contextually, it is selecting the hover box in this case.</dd>
+
+            </dl>
+
+        </section>
+    </main>
+    
+</body>
+</html>
